@@ -10,7 +10,7 @@ plus = 1
 
 
 def coro_sound():
-    pl.playaudio('hamburger-sound-effect.mp3')
+    pl.playaudio('hamburger-sound-effect.mp3')#сюда вьеби асинхрон
 
 
 def button_did():
@@ -19,6 +19,7 @@ def button_did():
     clicks += win
     burger_count["text"] = f"Humgurgers {clicks}"
     btn.after(btn_press_delay, lambda: btn.configure(image=ham_pic))
+    #здесь он должен вызываться
 
 
 def button2_did():
